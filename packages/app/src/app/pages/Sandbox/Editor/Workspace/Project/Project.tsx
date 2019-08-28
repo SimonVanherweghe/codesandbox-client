@@ -34,6 +34,7 @@ import { Frozen } from './Frozen';
 import { Keywords } from './Keywords';
 import { SandboxConfig } from './SandboxConfig';
 import { Title } from './Title';
+import { Updated } from './Updated';
 
 interface IProjectProps {
   editable?: boolean;
@@ -61,6 +62,7 @@ export const Project = inject('store', 'signals')(
             <Description editable={editable} />
             {/* Disable until we also moved SSE over */}
             {/* <Alias editable={editable} /> */}
+            <Updated />
           </BasicInfo>
 
           {!sandbox.team && sandbox.author && (
