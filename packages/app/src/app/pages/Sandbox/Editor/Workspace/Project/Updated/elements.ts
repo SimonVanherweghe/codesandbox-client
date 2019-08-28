@@ -2,12 +2,18 @@ import styled, { css } from 'styled-components';
 
 export const SandboxUpdated = styled.div`
   ${({ theme }) => css`
-  margin-top: 0.5rem;
-    color: ${
-      theme.light ? css`rgba(0, 0, 0, 0.7)` : css`rgba(255, 255, 255, 0.7)`
-    };
+    margin-top: 0.5rem;
+    color: ${theme.light
+      ? css`rgba(0, 0, 0, 0.7)`
+      : css`rgba(255, 255, 255, 0.7)`};
     font-size: 0.875rem;
     font-weight: 700;
-    font-style: 'normal'};
+    font-style: 'normal';
+  `}
+`;
+
+export const Time = styled.time`
+  ${() => css`
+    font-weight: 400;};
   `}
 `;
